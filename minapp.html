@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="utf-8">
+    <title>Demo Download</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="游戏">
+    <meta name="author" content="Muhammad Usman">
+</head>
+<body>
+<p>友情提示:</p>
+<div>iPhone手机请使用自带Safari打开</div>
+<script type="text/javascript">
+    function getQueryString(name) {  
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");  
+        var r = window.location.search.substr(1).match(reg);  
+        if (r != null) return unescape(r[2]); return null;  
+    }  
+  
+    var tid = getQueryString("tid"); 
+    if (tid) {
+        window.location.href="hkdyh://dyh.app/openTable?tableID="+tid;
+    };
+</script>
+<br>
+<br>
+<div>Demo</div>
+<br>
+<a href="itms-services://?action=download-manifest&url=https://yk.xkt.com/app/minapp.plist">iPhone版</a>
+</body>
+</html>
